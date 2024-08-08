@@ -41,8 +41,8 @@ header .logo {
   text-align: center;
   height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Değişiklik: İçerikleri yatayda yaymak */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -50,31 +50,28 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 20px; /* Değişiklik: Hakkında kısmını sola yaslamak */
+  margin-bottom: 20px;
 }
 
 .hero-content {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
   max-width: 600px;
-  margin: 0 auto; /* Değişiklik: Ortalamak için */
 }
 
 .form-row {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  flex-direction: column; /* Mobilde dikey hizalama */
+  gap: 20px;
 }
 
 .form-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: 1;
-  min-width: 150px;
-  max-width: 30%;
+  width: 100%; /* Genişliği %100 yap */
 }
 
 #appointment-form label,
@@ -88,7 +85,7 @@ header .logo {
 #appointment-form input,
 #appointment-form button,
 #appointment-form select {
-  padding: 8px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -108,7 +105,7 @@ header .logo {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
@@ -168,19 +165,19 @@ footer {
   color: var(--highlight-color);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   .hero {
-    padding: 50px 20px;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
   }
 
   .form-column {
-    min-width: 100%;
-    max-width: 100%;
-  }
-
-  #about {
-    position: static;
-    transform: none;
+    width: 45%;
   }
 }
