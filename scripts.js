@@ -10,11 +10,16 @@ document.getElementById('appointment-form').addEventListener('submit', function(
   }
 
   emailjs.sendForm('service_vb6dl7h', 'template_suqfnx7', this)
-    .then(function() {
+    .then(function(response) {
       alert('Randevu talebiniz oluşturuldu');
     }, function(error) {
-      console.error('FAILED...', error);
-      alert('Randevu talebi oluşturulamadı. Lütfen tekrar deneyin.');
+      let errorMessage = 'Randevu talebi oluşturulamadı. Lütfen tekrar deneyin.';
+
+      if (error && error.status && error.text) {
+        errorMessage += '\nHata Kodu: ' + error.status + '\nHata Mesajı: ' + error.text;
+      }
+
+      alert(errorMessage);
     });
 });
 
