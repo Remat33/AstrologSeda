@@ -65,14 +65,14 @@ header .logo {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%; /* Mobilde %100 genişlik */
+  width: 100%;
 }
 
 .form-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%; /* Mobilde %100 genişlik */
+  width: 100%;
 }
 
 #appointment-form label,
