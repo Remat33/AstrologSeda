@@ -39,7 +39,7 @@ header .logo {
   color: #fff;
   padding: 50px 20px;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,21 +57,22 @@ header .logo {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
   max-width: 600px;
 }
 
 .form-row {
   display: flex;
-  flex-direction: column; /* Mobilde dikey hizalama */
+  flex-direction: column;
   gap: 20px;
+  width: 100%; /* Mobilde %100 genişlik */
 }
 
 .form-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%; /* Genişliği %100 yap */
+  width: 100%; /* Mobilde %100 genişlik */
 }
 
 #appointment-form label,
