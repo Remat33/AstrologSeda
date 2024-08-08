@@ -21,4 +21,53 @@
           <li>Sinastri (İlişki Haritası Yorumlama)</li>
           <li>3 soru danışmanlığı (Horary)</li>
           <li>Rektifikasyon (Doğum saati bulma)</li>
-       
+        </ul>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1>Astroloji Danışmanlığı</h1>
+      <p>Astrolojiyle hayatınıza yön verin.</p>
+      <form id="appointment-form">
+        <div class="form-row">
+          <div class="form-column">
+            <label for="name">İsim Soyisim:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="birthdate">Doğum Tarihi & Saati:</label>
+            <input type="datetime-local" id="birthdate" name="birthdate" required>
+            <label for="birthplace-country">Doğum Yeri (Ülke):</label>
+            <select id="birthplace-country" name="birthplaceCountry" required>
+              <option value="Türkiye">Türkiye</option>
+              <option value="Yurtdışı">Yurtdışı</option>
+            </select>
+            <label for="birthplace-city" id="birthplace-label">Doğum Yeri (Şehir):</label>
+            <input type="text" id="birthplace-city" name="birthplaceCity" required>
+          </div>
+          <div class="form-column">
+            <label for="appointment-date">Randevu Günü:</label>
+            <input type="date" id="appointment-date" name="appointmentDate" required>
+            <label for="appointment-time" class="centered-label">Uygun Saat Aralıkları:</label>
+            <div class="radio-container">
+              <label><input type="radio" name="appointmentTime" value="9-18"> 09:00 - 18:00</label>
+              <label><input type="radio" name="appointmentTime" value="18-00"> 18:00 - 00:00</label>
+            </div>
+            <button type="submit">Randevu Al</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <p>© 2024 Astroloji Danışmanı</p>
+    <p>İletişim: astrologseda@astrolojievreni.com | +90 530 351 47 63</p>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function(){
+          emailjs.init("AstrologSeda");
+      })();
+  </script>
+  <script src="scripts.js"></script>
+</body>
+</html>
