@@ -9,7 +9,7 @@ document.getElementById('appointment-form').addEventListener('submit', function(
     return;
   }
 
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+  emailjs.sendForm('service_vb6dl7h', 'template_suqfnx7', this)
     .then(function() {
       alert('Randevu talebiniz oluşturuldu');
     }, function(error) {
