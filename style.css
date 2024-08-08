@@ -1,0 +1,187 @@
+:root {
+  --primary-color: #6a0dad;
+  --secondary-color: #f8f9fa;
+  --highlight-color: #f0f8ff; /* Yazılar için beyaz benzeri canlı bir renk */
+  --font-family: 'Calibri', 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Scrolling'u kaldırmak için */
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Şeffaf arka plan */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 2em; /* Yazı boyutunu büyüttük */
+  font-weight: bold;
+  background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero {
+  background-image: url('images/astroloji-arka-plan.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 50px 20px; /* Yukarı taşıma için padding'i azalttık */
+  text-align: center;
+  height: calc(100vh - 40px); /* Header yüksekliğini çıkardık */
+  display: flex;
+  flex-direction: row; /* Yatayda hizalamak için */
+  justify-content: flex-start; /* Başlangıçtan itibaren hizalayın */
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Sağ tarafa boşluk ekleyin */
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* İçeriğin arka planı */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px; /* Genişliği küçülttük */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Yan yana olan kutucuklar arasına boşluk ekledik */
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Alt alta olan kutucuklar arasına boşluk ekledik */
+  flex: 1;
+  min-width: 150px; /* Minimum genişliği belirledik */
+  max-width: 30%; /* Kolonları %30 genişlik ile sınırlandırdık */
+}
+
+#appointment-form label,
+#appointment-form input,
+#appointment-form button,
+#appointment-form select,
+#appointment-form .radio-container {
+  width: 100%;
+}
+
+#appointment-form input,
+#appointment-form button,
+#appointment-form select {
+  padding: 8px; /* Yükseklikleri biraz küçülttük */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.centered-label {
+  text-align: center;
+  display: block;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Radyo butonlar arasında boşluk ekledik */
+}
+
+.radio-container label {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Arka planı şeffaf yaptık */
+  padding: 8px; /* Yüksekliği biraz küçülttük */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff; /* Yazı rengini beyaz yaptık */
+}
+
+.radio-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+#appointment-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Butonun yukarısına boşluk ekledik */
+}
+
+#appointment-form button:hover {
+  background-color: #5a0bb2;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #6a0dad; /* Çerçeve ekledik */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Gölge ekledik */
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px; /* Yukarı taşıma için padding'i azalttık */
+  background-color: #eee;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  text-align: left;
+  color: var(--highlight-color); /* Yazı rengini değiştirdik */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+    flex-direction: column; /* Mobil cihazlarda dikey hizalama */
+  }
+
+  .form-column {
+    min-width: 100%;
+    max-width: 100%; /* Mobil cihazlarda %100 genişlik */
+  }
+
+  #about {
+    position: static;
+    transform: none;
+  }
+}
