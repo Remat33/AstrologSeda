@@ -1,7 +1,7 @@
 :root {
   --primary-color: #6a0dad;
   --secondary-color: #f8f9fa;
-  --highlight-color: #f0f8ff; /* Yazılar için beyaz benzeri canlı bir renk */
+  --highlight-color: #f0f8ff;
   --font-family: 'Calibri', 'Comic Sans MS', 'Arial', sans-serif;
 }
 
@@ -10,11 +10,11 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Scrolling'u kaldırmak için */
+  overflow: hidden;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.7); /* Şeffaf arka plan */
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -25,7 +25,7 @@ header {
 }
 
 header .logo {
-  font-size: 2em; /* Yazı boyutunu büyüttük */
+  font-size: 2em;
   font-weight: bold;
   background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff);
   -webkit-background-clip: text;
@@ -37,12 +37,12 @@ header .logo {
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 50px 20px; /* Yukarı taşıma için padding'i azalttık */
+  padding: 50px 20px;
   text-align: center;
-  height: calc(100vh - 40px); /* Header yüksekliğini çıkardık */
+  height: calc(100vh - 40px);
   display: flex;
-  flex-direction: row; /* Yatayda hizalamak için */
-  justify-content: flex-start; /* Başlangıçtan itibaren hizalayın */
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -50,30 +50,30 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px; /* Sağ tarafa boşluk ekleyin */
+  margin-right: 20px;
 }
 
 .hero-content {
-  background-color: rgba(0, 0, 0, 0.5); /* İçeriğin arka planı */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
   width: 80%;
-  max-width: 600px; /* Genişliği küçülttük */
+  max-width: 600px;
 }
 
 .form-row {
   display: flex;
   justify-content: space-between;
-  gap: 30px; /* Yan yana olan kutucuklar arasına boşluk ekledik */
+  gap: 30px;
 }
 
 .form-column {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Alt alta olan kutucuklar arasına boşluk ekledik */
+  gap: 20px;
   flex: 1;
-  min-width: 150px; /* Minimum genişliği belirledik */
-  max-width: 30%; /* Kolonları %30 genişlik ile sınırlandırdık */
+  min-width: 150px;
+  max-width: 30%;
 }
 
 #appointment-form label,
@@ -87,7 +87,7 @@ header .logo {
 #appointment-form input,
 #appointment-form button,
 #appointment-form select {
-  padding: 8px; /* Yükseklikleri biraz küçülttük */
+  padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -100,18 +100,18 @@ header .logo {
 .radio-container {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Radyo butonlar arasında boşluk ekledik */
+  gap: 10px;
 }
 
 .radio-container label {
   display: flex;
   align-items: center;
-  background-color: transparent; /* Arka planı şeffaf yaptık */
-  padding: 8px; /* Yüksekliği biraz küçülttük */
+  background-color: transparent;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
-  color: #fff; /* Yazı rengini beyaz yaptık */
+  color: #fff;
 }
 
 .radio-container input[type="radio"] {
@@ -123,7 +123,7 @@ header .logo {
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-top: 20px; /* Butonun yukarısına boşluk ekledik */
+  margin-top: 20px;
 }
 
 #appointment-form button:hover {
@@ -142,15 +142,15 @@ footer {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 5px solid #6a0dad; /* Çerçeve ekledik */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Gölge ekledik */
+  border: 5px solid #6a0dad;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px; /* Yukarı taşıma için padding'i azalttık */
+  padding: 40px 20px;
   background-color: #eee;
   position: absolute;
   left: 0;
@@ -166,18 +166,18 @@ footer {
 
 .about-text {
   text-align: left;
-  color: var(--highlight-color); /* Yazı rengini değiştirdik */
+  color: var(--highlight-color);
 }
 
 @media (max-width: 768px) {
   .hero {
     padding: 50px 20px;
-    flex-direction: column; /* Mobil cihazlarda dikey hizalama */
+    flex-direction: column;
   }
 
   .form-column {
     min-width: 100%;
-    max-width: 100%; /* Mobil cihazlarda %100 genişlik */
+    max-width: 100%;
   }
 
   #about {
