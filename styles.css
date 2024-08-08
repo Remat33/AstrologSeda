@@ -37,7 +37,7 @@ header .logo {
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 20px; /* Daha küçük padding */
+  padding: 10px; /* Daha küçük padding */
   text-align: center;
   height: 100vh; /* Tam ekran yüksekliği */
   display: flex;
@@ -58,7 +58,7 @@ header .logo {
   padding: 10px; /* Daha küçük padding */
   border-radius: 10px;
   width: 90%;
-  max-width: 500px; /* Daha küçük max genişlik */
+  max-width: 400px; /* Daha küçük max genişlik */
 }
 
 .form-row {
