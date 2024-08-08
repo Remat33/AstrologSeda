@@ -41,8 +41,8 @@ header .logo {
   text-align: center;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between; /* Değişiklik: İçerikleri yatayda yaymak */
   align-items: center;
 }
 
@@ -50,7 +50,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  margin-left: 20px; /* Değişiklik: Hakkında kısmını sola yaslamak */
 }
 
 .hero-content {
@@ -59,6 +59,7 @@ header .logo {
   border-radius: 10px;
   width: 80%;
   max-width: 600px;
+  margin: 0 auto; /* Değişiklik: Ortalamak için */
 }
 
 .form-row {
