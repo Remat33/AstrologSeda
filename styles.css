@@ -10,7 +10,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -39,10 +39,10 @@ header .logo {
   color: #fff;
   padding: 50px 20px;
   text-align: center;
-  height: calc(100vh - 40px);
+  height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -106,7 +106,7 @@ header .logo {
 .radio-container label {
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -152,10 +152,8 @@ footer {
   align-items: center;
   padding: 40px 20px;
   background-color: #eee;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  margin-top: 100px;
 }
 
 .about-container {
