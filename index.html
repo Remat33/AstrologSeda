@@ -7,35 +7,48 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Astrolog Seda</h1>
-    <p>Profesyonel Astroloji Danışmanlığı</p>
-  </header>
-  
-  <section id="about">
-    <img src="images/profile.jpg" alt="Astrolog Seda">
-    <p>Aldebaran Akademi mezunu. Batı Astrolojisi:<br>
-    - Doğum Haritası Danışmanlığı<br>
-    - Sinastri (İlişki Haritası Yorumlama)<br>
-    - 3 soru danışmanlığı (Horary)<br>
-    - Rektifikasyon (Doğum saati bulma)
-    </p>
-  </section>
-  
-  <section id="appointment">
-    <h2>Randevu Al</h2>
-    <form id="appointment-form">
-      <input type="text" name="name" placeholder="Ad Soyad" required>
-      <input type="date" id="birthdate" name="birthdate" placeholder="Doğum Tarihi" required>
-      <input type="text" name="birthplace" placeholder="Doğum Yeri (Ülke/İl)" required>
-      <button type="submit">Randevu Al</button>
-    </form>
-    <p>Randevu için uygun tarihler WhatsApp üzerinden iletilecektir.</p>
-  </section>
+  <div class="sidebar">
+    <a href="#about">Hakkında</a>
+    <a href="#appointment">Randevu Al</a>
+    <a href="#education">Eğitim</a>
+  </div>
+  <div class="content">
+    <header>
+      <h1>Astrolog Seda</h1>
+      <p>Profesyonel Astroloji Danışmanlığı</p>
+    </header>
 
-  <footer>
-    <button id="whatsapp-button">Bize Ulaşın</button>
-  </footer>
+    <section id="about">
+      <img src="images/profile.jpg" alt="Astrolog Seda">
+      <p class="about-text">Aldebaran Akademi mezunu. Batı Astrolojisi:<br>
+      - Doğum Haritası Danışmanlığı<br>
+      - Sinastri (İlişki Haritası Yorumlama)<br>
+      - 3 soru danışmanlığı (Horary)<br>
+      - Rektifikasyon (Doğum saati bulma)
+      </p>
+    </section>
+
+    <section id="appointment">
+      <h2>Randevu Al</h2>
+      <form id="appointment-form">
+        <input type="text" name="name" placeholder="Ad Soyad" required>
+        <input type="datetime-local" id="birthdate" name="birthdate" required>
+        <input type="text" name="birthplace" placeholder="Doğum Yeri (Ülke/İl)" required>
+        <button type="submit">Randevu Al</button>
+      </form>
+      <p>Randevu için uygun tarihler WhatsApp üzerinden iletilecektir.</p>
+    </section>
+
+    <section id="education">
+      <h2>Eğitim</h2>
+      <p>Yakında eklenecek...</p>
+    </section>
+
+    <footer>
+      <button id="whatsapp-button">Bize Ulaşın</button>
+      <p>&copy; 2023 Astrolog Seda. Tüm hakları saklıdır.</p>
+    </footer>
+  </div>
 
   <script src="scripts.js"></script>
 </body>
