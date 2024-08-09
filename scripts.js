@@ -23,12 +23,9 @@ document.getElementById('appointment-form').addEventListener('submit', function(
     });
 });
 
-document.getElementById('birthplace-country').addEventListener('change', function() {
-  const birthplaceCityLabel = document.getElementById('birthplace-label');
-  if (this.value === 'Yurtdışı') {
-    birthplaceCityLabel.textContent = 'Doğum Yeri (Ülke/Şehir):';
-  } else {
-    birthplaceCityLabel.textContent = 'Doğum Yeri (Şehir):';
+document.getElementById('whatsapp-button').addEventListener('click', function() {
+  if (confirm("WhatsApp'a yönlendirileceksiniz. Devam etmek istiyor musunuz?")) {
+    window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank');
   }
 });
 
