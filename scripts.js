@@ -25,7 +25,7 @@ document.getElementById('appointment-form').addEventListener('submit', function(
 
 document.getElementById('whatsapp-button').addEventListener('click', function() {
   if (confirm("WhatsApp'a yönlendirileceksiniz. Devam etmek istiyor musunuz?")) {
-    window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank');
+    window.open('https://wa.me/905303514763', '_blank');
   }
 });
 
