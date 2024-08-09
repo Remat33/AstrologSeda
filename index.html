@@ -13,7 +13,7 @@
   </header>
   
   <section id="about">
-    <img src="path/to/your/profile.jpg" alt="Astrolog Seda">
+    <img src="images/profile.jpg" alt="Astrolog Seda">
     <p>Aldebaran Akademi mezunu. Batı Astrolojisi:<br>
     - Doğum Haritası Danışmanlığı<br>
     - Sinastri (İlişki Haritası Yorumlama)<br>
@@ -24,9 +24,9 @@
   
   <section id="appointment">
     <h2>Randevu Al</h2>
-    <form>
+    <form id="appointment-form">
       <input type="text" name="name" placeholder="Ad Soyad" required>
-      <input type="date" name="birthdate" placeholder="Doğum Tarihi" required>
+      <input type="date" id="birthdate" name="birthdate" placeholder="Doğum Tarihi" required>
       <input type="text" name="birthplace" placeholder="Doğum Yeri (Ülke/İl)" required>
       <button type="submit">Randevu Al</button>
     </form>
@@ -34,7 +34,9 @@
   </section>
 
   <footer>
-    <button onclick="window.location.href='https://wa.me/yourphonenumber'">Bize Ulaşın</button>
+    <button id="whatsapp-button">Bize Ulaşın</button>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
