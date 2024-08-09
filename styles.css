@@ -10,66 +10,55 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Yana kaydırmayı engeller */
+  background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background-color: var(--secondary-color); /* Arka plan rengi */
 }
 
 header h1 {
   font-size: 1.8em;
-  color: var(--primary-color); /* Mor renk */
-  margin: 0;
+  color: #6a0dad; /* Mor renk */
 }
 
 header p {
   font-size: 1.2em;
   color: #333;
-  margin: 0;
 }
 
 /* Hakkımda Bölümü */
 #about {
   text-align: center;
   padding: 20px;
-  background-image: url('path/to/your/background-image.jpg'); /* Arka plan resmi */
-  background-size: cover;
-  background-position: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
+  border-radius: 10px;
+  margin: 20px;
 }
 
 #about img {
   border-radius: 50%;
-  border: 5px solid var(--primary-color); /* Mor çerçeve */
-  width: 120px;
-  height: 120px;
+  border: 5px solid #6a0dad; /* Mor çerçeve */
+  width: 150px;
+  height: 150px;
 }
 
-#about p {
+.about-text {
   margin-top: 20px;
   font-size: 1em;
-  color: #fff; /* Beyaz renk */
-  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
-  padding: 10px;
-  border-radius: 10px;
+  color: #333;
 }
 
 /* Form Bölümü */
 #appointment {
   text-align: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Şeffaf beyaz arka plan */
+  background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
   border-radius: 10px;
   margin: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-#appointment form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #appointment input {
@@ -78,11 +67,10 @@ header p {
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1em;
 }
 
 #appointment button {
-  background-color: var(--primary-color); /* Mor renk */
+  background-color: #6a0dad; /* Mor renk */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -93,11 +81,6 @@ header p {
 
 #appointment button:hover {
   background-color: #5a0cad; /* Daha koyu mor */
-}
-
-#appointment p {
-  font-size: 0.9em;
-  color: #555;
 }
 
 footer {
