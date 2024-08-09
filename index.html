@@ -27,10 +27,9 @@
   <section id="appointment">
     <h2>Randevu Al</h2>
     <form id="appointment-form">
-      <input type="text" name="name" placeholder="İsim" required pattern="[A-Za-zğüşöçİĞÜŞÖÇ ]{3,50}">
+      <input type="text" name="name" placeholder="Ad Soyad" required pattern="[A-Za-zğüşöçİĞÜŞÖÇ ]{3,50}">
       <input type="date" name="birthdate" placeholder="Doğum Tarihi" required>
-      <input type="text" name="birthplace" placeholder="Doğum Yeri" required>
-      <input type="time" name="birthtime" placeholder="Doğum Saati" required>
+      <input type="text" name="birthplace" placeholder="Doğum Yeri (Ülke/İl)" required>
       <button type="submit">Randevu Al</button>
     </form>
     <p>Randevu için uygun tarihler WhatsApp üzerinden iletilecektir.</p>
@@ -42,7 +41,9 @@
   </section>
 
   <footer>
-    <button id="whatsapp-button" onclick="window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank')">Bize Ulaşın</button>
+    <button id="whatsapp-button">
+      <img src="images/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon"> Bize Ulaşın
+    </button>
     <p>© 2024 Astroloji Danışmanı</p>
     <p>İletişim: astrologseda@astrolojievreni.com | +90 530 351 47 63</p>
   </footer>
