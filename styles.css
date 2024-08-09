@@ -14,117 +14,70 @@ body {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 10px; /* Daha küçük padding */
   text-align: center;
-  width: 100%;
-  z-index: 1000;
+  padding: 20px;
 }
 
-header .logo {
-  font-size: 1.5em; /* Daha küçük font boyutu */
-  font-weight: bold;
-  background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff);
-  -webkit-background-clip: text;
-  color: transparent;
+header h1 {
+  font-size: 1.8em;
+  color: #6a0dad; /* Mor renk */
 }
 
-.hero {
-  background-image: url('images/astroloji-arka-plan.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 10px; /* Daha küçük padding */
+header p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Hakkımda Bölümü */
+#about {
   text-align: center;
-  min-height: 100vh; /* Tam ekran yüksekliği */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Açık gri arka plan */
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px; /* Daha küçük margin */
+#about img {
+  border-radius: 50%;
+  border: 5px solid #6a0dad; /* Mor çerçeve */
+  width: 150px;
+  height: 150px;
 }
 
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px; /* Daha küçük padding */
+#about p {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Form Bölümü */
+#appointment {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* Beyaz arka plan */
   border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#appointment input {
   width: 90%;
-  max-width: 400px; /* Daha küçük max genişlik */
-}
-
-.form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Daha küçük gap */
-  width: 100%;
-}
-
-.form-column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Daha küçük gap */
-  width: 100%;
-}
-
-#appointment-form label,
-#appointment-form input,
-#appointment-form button,
-#appointment-form select,
-#appointment-form .radio-container {
-  width: 100%;
-}
-
-#appointment-form input,
-#appointment-form button,
-#appointment-form select {
-  padding: 8px; /* Daha küçük padding */
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.centered-label {
-  text-align: center;
-  display: block;
-}
-
-.radio-container {
-  display: flex;
-  flex-direction: column;
-  gap: 5px; /* Daha küçük gap */
-}
-
-.radio-container label {
-  display: flex;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 8px; /* Daha küçük padding */
+  padding: 10px;
+  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  cursor: pointer;
-  color: #fff;
 }
 
-.radio-container input[type="radio"] {
-  margin-right: 5px; /* Daha küçük margin */
-}
-
-#appointment-form button {
-  background-color: var(--primary-color);
+#appointment button {
+  background-color: #6a0dad; /* Mor renk */
   color: #fff;
+  padding: 10px 20px;
   border: none;
+  border-radius: 5px;
+  font-size: 1em;
   cursor: pointer;
-  margin-top: 10px; /* Daha küçük margin */
 }
 
-#appointment-form button:hover {
-  background-color: #5a0bb2;
+#appointment button:hover {
+  background-color: #5a0cad; /* Daha koyu mor */
 }
 
 footer {
@@ -132,10 +85,9 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  width: 100%;
 }
 
-#whatsapp-button {
+footer button {
   background-color: #25d366;
   color: #fff;
   padding: 10px 20px;
@@ -145,51 +97,6 @@ footer {
   font-size: 1em;
 }
 
-#whatsapp-button:hover {
+footer button:hover {
   background-color: #20b358;
-}
-
-.profile-pic {
-  width: 100px; /* Daha küçük resim boyutu */
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px; /* Daha küçük margin */
-  border: 5px solid #6a0dad;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px; /* Daha küçük padding */
-  background-color: #eee;
-}
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-text {
-  text-align: left;
-  color: var(--highlight-color);
-}
-
-@media (min-width: 769px) {
-  .hero {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .form-row {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px; /* Daha küçük gap */
-  }
-
-  .form-column {
-    width: 45%;
-  }
 }
