@@ -3,56 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astroloji Danışmanlığı</title>
+  <title>Astrolog Seda</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="logo">Astroloji Danışmanlığı</div>
-    <p>Profesyonel Astroloji Danışmanlığı hizmeti sunulmaktadır.</p>
+    <h1>Astrolog Seda</h1>
+    <p>Profesyonel Astroloji Danışmanlığı</p>
   </header>
   
-  <section id="home" class="hero">
-    <div class="about-container">
-      <img src="images/profile.jpg" alt="Danışman Fotoğrafı" class="profile-pic">
-      <div class="about-text">
-        <p>Aldebaran Akademi mezunu. Batı Astrolojisi:</p>
-        <ul>
-          <li>Doğum Haritası Danışmanlığı</li>
-          <li>Sinastri (İlişki Haritası Yorumlama)</li>
-          <li>3 soru danışmanlığı (Horary)</li>
-          <li>Rektifikasyon (Doğum saati bulma)</li>
-        </ul>
-      </div>
-    </div>
-    <div class="hero-content">
-      <h1>Astroloji Danışmanlığı</h1>
-      <p>Astrolojiyle hayatınıza yön verin.</p>
-      <form id="appointment-form">
-        <div class="form-row">
-          <div class="form-column">
-            <label for="name">İsim:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="phone">Telefon:</label>
-            <input type="tel" id="phone" name="phone" required>
-          </div>
-          <div class="form-column">
-            <label for="birthdate">Doğum Tarihi:</label>
-            <input type="date" id="birthdate" name="birthdate" required>
-            <label for="birthplace">Doğum Yeri:</label>
-            <input type="text" id="birthplace" name="birthplace" required>
-            <label for="birthtime">Doğum Saati:</label>
-            <input type="time" id="birthtime" name="birthtime" required>
-          </div>
-        </div>
-        <button type="submit">Randevu Al</button>
-      </form>
-      <p>Randevu için uygun tarihler WhatsApp üzerinden iletilecektir.</p>
-    </div>
+  <section id="about">
+    <img src="images/profile.jpg" alt="Astrolog Seda">
+    <p>Aldebaran Akademi mezunu. Batı Astrolojisi:<br>
+    - Doğum Haritası Danışmanlığı<br>
+    - Sinastri (İlişki Haritası Yorumlama)<br>
+    - 3 soru danışmanlığı (Horary)<br>
+    - Rektifikasyon (Doğum saati bulma)
+    </p>
   </section>
   
-  <footer class="footer">
-    <button id="whatsapp-button" onclick="window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank')">Bize Ulaşın</button>
+  <section id="appointment">
+    <h2>Randevu Al</h2>
+    <form id="appointment-form">
+      <input type="text" name="name" placeholder="İsim">
+      <input type="text" name="birthdate" placeholder="Doğum Tarihi">
+      <input type="text" name="birthplace" placeholder="Doğum Yeri">
+      <input type="text" name="birthtime" placeholder="Doğum Saati">
+      <button type="submit">Randevu Al</button>
+    </form>
+  </section>
+
+  <footer>
+    <button onclick="window.location.href='https://wa.me/yourphonenumber'">Bize Ulaşın</button>
     <p>© 2024 Astroloji Danışmanı</p>
     <p>İletişim: astrologseda@astrolojievreni.com | +90 530 351 47 63</p>
   </footer>
