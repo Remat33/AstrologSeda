@@ -1,11 +1,11 @@
 document.getElementById('appointment-form').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const appointmentDate = document.getElementById('appointment-date').value;
+  const birthDate = document.getElementById('birthdate').value;
   const today = new Date().toISOString().split('T')[0];
 
-  if (appointmentDate < today) {
-    alert('Randevu talebi olarak bugünün tarihinden daha erken bir tarih seçilemez.');
+  if (birthDate >= today) {
+    alert('Doğum tarihi bugünün tarihinden ileri bir tarih olamaz.');
     return;
   }
 
