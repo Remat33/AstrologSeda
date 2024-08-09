@@ -11,6 +11,37 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Yana kaydırmayı engeller */
+  display: flex;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+  width: 100%;
 }
 
 header {
@@ -48,11 +79,11 @@ header p {
   height: 150px;
 }
 
-#about p {
-  margin-top: 20px;
-  font-size: 1em;
-  color: #fff; /* Beyaz renk */
-  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+#about .about-text {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 10px;
 }
@@ -65,6 +96,10 @@ header p {
   border-radius: 10px;
   margin: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#appointment h2 {
+  color: var(--primary-color);
 }
 
 #appointment form {
@@ -101,6 +136,20 @@ header p {
   color: #555;
 }
 
+/* Eğitim Bölümü */
+#education {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Şeffaf beyaz arka plan */
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#education h2 {
+  color: var(--primary-color);
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -120,4 +169,9 @@ footer button {
 
 footer button:hover {
   background-color: #20b358;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #fff;
 }
