@@ -9,52 +9,33 @@
 <body>
   <header>
     <h1>Astrolog Seda</h1>
-    <p>Astroloji Danışmanlığı</p>
+    <p>Profesyonel Astroloji Danışmanlığı</p>
   </header>
   
   <section id="about">
-    <img src="images/profile.jpg" alt="Astrolog Seda">
-    <div class="about-text">
-      <h3>Seda Öztekin</h3>
-      <p>Aldebaran Akademi mezunu. Batı Astrolojisi:<br>
-      - Doğum Haritası Danışmanlığı<br>
-      - Sinastri (İlişki Haritası Yorumlama)<br>
-      - 3 soru danışmanlığı (Horary)<br>
-      - Rektifikasyon (Doğum saati bulma)
-      </p>
-    </div>
+    <img src="path/to/your/profile.jpg" alt="Astrolog Seda">
+    <p>Aldebaran Akademi mezunu. Batı Astrolojisi:<br>
+    - Doğum Haritası Danışmanlığı<br>
+    - Sinastri (İlişki Haritası Yorumlama)<br>
+    - 3 soru danışmanlığı (Horary)<br>
+    - Rektifikasyon (Doğum saati bulma)
+    </p>
   </section>
   
   <section id="appointment">
     <h2>Randevu Al</h2>
-    <form id="appointment-form">
-      <input type="text" name="name" placeholder="Ad Soyad" required pattern="[A-Za-zğüşöçİĞÜŞÖÇ ]{3,50}">
-      <input type="date" name="birthdate" id="birthdate" placeholder="Doğum Tarihi" required>
-      <input type="text" name="birthplace" placeholder="Doğum Yeri (Ülke/İl)" required>
+    <form>
+      <input type="text" name="name" placeholder="İsim" required>
+      <input type="text" name="birthdate" placeholder="Doğum Tarihi" required>
+      <input type="text" name="birthplace" placeholder="Doğum Yeri" required>
+      <input type="text" name="birthtime" placeholder="Doğum Saati" required>
       <button type="submit">Randevu Al</button>
     </form>
     <p>Randevu için uygun tarihler WhatsApp üzerinden iletilecektir.</p>
   </section>
 
-  <section id="education">
-    <h2>Eğitim</h2>
-    <p>Loading...</p>
-  </section>
-
   <footer>
-    <button id="whatsapp-button">
-      <img src="images/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon"> Bize Ulaşın
-    </button>
-    <p>© 2024 Astroloji Danışmanı</p>
-    <p>İletişim: astrologseda@astrolojievreni.com | +90 530 351 47 63</p>
+    <button onclick="window.location.href='https://wa.me/yourphonenumber'">Bize Ulaşın</button>
   </footer>
-
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="text/javascript">
-      (function(){
-          emailjs.init("YOUR_USER_ID");
-      })();
-  </script>
-  <script src="scripts.js"></script>
 </body>
 </html>
