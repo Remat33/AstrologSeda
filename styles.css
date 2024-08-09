@@ -17,6 +17,9 @@ body {
 header {
   text-align: center;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Beyaz arka plan banner */
+  border-radius: 10px;
+  margin: 20px;
 }
 
 header h1 {
@@ -48,6 +51,12 @@ header p {
 .about-text {
   margin-top: 20px;
   font-size: 1em;
+  color: #333;
+}
+
+.about-text h3 {
+  margin-top: 10px;
+  font-size: 1.2em; /* Başlıktan küçük */
   color: #333;
 }
 
