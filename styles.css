@@ -10,10 +10,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Scrollbar'ı gizlemek için */
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* Tüm ekranı kaplamak için */
+  overflow-x: hidden; /* Yana kaydırmayı engeller */
 }
 
 header {
@@ -40,7 +37,7 @@ header .logo {
   color: #fff;
   padding: 10px; /* Daha küçük padding */
   text-align: center;
-  flex: 1; /* İçerik alanını doldur */
+  min-height: 100vh; /* Tam ekran yüksekliği */
   display: flex;
   flex-direction: column;
   justify-content: center;
