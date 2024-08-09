@@ -10,22 +10,23 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden; /* Scrollbar'ı gizlemek için */
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Tüm ekranı kaplamak için */
 }
 
 header {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  padding: 10px;
+  padding: 10px; /* Daha küçük padding */
   text-align: center;
-  position: fixed;
   width: 100%;
-  top: 0;
   z-index: 1000;
 }
 
 header .logo {
-  font-size: 1.5em;
+  font-size: 1.5em; /* Daha küçük font boyutu */
   font-weight: bold;
   background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff);
   -webkit-background-clip: text;
@@ -37,9 +38,9 @@ header .logo {
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 20px;
+  padding: 10px; /* Daha küçük padding */
   text-align: center;
-  min-height: 100vh;
+  flex: 1; /* İçerik alanını doldur */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,28 +51,28 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Daha küçük margin */
 }
 
 .hero-content {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px; /* Daha küçük padding */
   border-radius: 10px;
-  width: 100%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 400px; /* Daha küçük max genişlik */
 }
 
 .form-row {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px; /* Daha küçük gap */
   width: 100%;
 }
 
 .form-column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px; /* Daha küçük gap */
   width: 100%;
 }
 
@@ -86,7 +87,7 @@ header .logo {
 #appointment-form input,
 #appointment-form button,
 #appointment-form select {
-  padding: 10px;
+  padding: 8px; /* Daha küçük padding */
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -99,22 +100,22 @@ header .logo {
 .radio-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px; /* Daha küçük gap */
 }
 
 .radio-container label {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
+  padding: 8px; /* Daha küçük padding */
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
   color: #fff;
 }
 
-radio-container input[type="radio"] {
-  margin-right: 10px;
+.radio-container input[type="radio"] {
+  margin-right: 5px; /* Daha küçük margin */
 }
 
 #appointment-form button {
@@ -122,7 +123,7 @@ radio-container input[type="radio"] {
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 10px; /* Daha küçük margin */
 }
 
 #appointment-form button:hover {
@@ -134,8 +135,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
@@ -154,10 +153,10 @@ footer {
 }
 
 .profile-pic {
-  width: 100px;
+  width: 100px; /* Daha küçük resim boyutu */
   height: 100px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Daha küçük margin */
   border: 5px solid #6a0dad;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -166,9 +165,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 20px; /* Daha küçük padding */
   background-color: #eee;
-  margin-top: 80px;
 }
 
 .about-container {
@@ -191,7 +189,7 @@ footer {
   .form-row {
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px; /* Daha küçük gap */
   }
 
   .form-column {
