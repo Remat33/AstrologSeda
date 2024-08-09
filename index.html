@@ -13,22 +13,24 @@
   </header>
   
   <section id="about">
-    <img src="path/to/your/profile.jpg" alt="Astrolog Seda">
-    <p>Aldebaran Akademi mezunu. Batı Astrolojisi:<br>
-    - Doğum Haritası Danışmanlığı<br>
-    - Sinastri (İlişki Haritası Yorumlama)<br>
-    - 3 soru danışmanlığı (Horary)<br>
-    - Rektifikasyon (Doğum saati bulma)
-    </p>
+    <img src="images/profile.jpg" alt="Astrolog Seda">
+    <div class="about-text">
+      <p>Aldebaran Akademi mezunu. Batı Astrolojisi:<br>
+      - Doğum Haritası Danışmanlığı<br>
+      - Sinastri (İlişki Haritası Yorumlama)<br>
+      - 3 soru danışmanlığı (Horary)<br>
+      - Rektifikasyon (Doğum saati bulma)
+      </p>
+    </div>
   </section>
   
   <section id="appointment">
     <h2>Randevu Al</h2>
-    <form>
+    <form id="appointment-form">
       <input type="text" name="name" placeholder="İsim" required>
-      <input type="text" name="birthdate" placeholder="Doğum Tarihi" required>
+      <input type="date" name="birthdate" placeholder="Doğum Tarihi" required>
       <input type="text" name="birthplace" placeholder="Doğum Yeri" required>
-      <input type="text" name="birthtime" placeholder="Doğum Saati" required>
+      <input type="time" name="birthtime" placeholder="Doğum Saati" required>
       <button type="submit">Randevu Al</button>
     </form>
     <p>Randevu için uygun tarihler WhatsApp üzerinden iletilecektir.</p>
@@ -36,6 +38,16 @@
 
   <footer>
     <button onclick="window.location.href='https://wa.me/yourphonenumber'">Bize Ulaşın</button>
+    <p>© 2024 Astroloji Danışmanı</p>
+    <p>İletişim: astrologseda@astrolojievreni.com | +90 530 351 47 63</p>
   </footer>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function(){
+          emailjs.init("YOUR_USER_ID");
+      })();
+  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
