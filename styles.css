@@ -38,13 +38,14 @@ header p {
   background-image: url('path/to/your/background-image.jpg'); /* Arka plan resmi */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 #about img {
   border-radius: 50%;
   border: 5px solid var(--primary-color); /* Mor çerçeve */
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
 }
 
 #about p {
@@ -72,7 +73,7 @@ header p {
   align-items: center;
 }
 
-#appointment input {
+#appointment input, #appointment select {
   width: 90%;
   padding: 10px;
   margin: 10px 0;
